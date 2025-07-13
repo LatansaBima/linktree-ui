@@ -5,8 +5,9 @@
 }
 
 body {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 0 15px;
     background-color: #395B64;
 }
 
@@ -256,4 +257,62 @@ footer {
     color: #F5F2E7;
     margin-top: 30px;
     padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .github-link,
+    .linkedin-link,
+    .whatsapp-link,
+    .email-link,
+    .webv2-link {
+        width: 90%;
+    }
+
+    .github-link:hover,
+    .linkedin-link:hover,
+    .whatsapp-link:hover,
+    .email-link:hover,
+    .webv2-link:hover {
+        width: 95%;
+    }
+
+    .github-link a,
+    .linkedin-link a,
+    .whatsapp-link a,
+    .email-link a,
+    .webv2-link a {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .github-link i,
+    .linkedin-link i,
+    .whatsapp-link i,
+    .email-link i,
+    .webv2-link i {
+        font-size: 28px;
+    }
+
+    .aside-button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .aside-button i {
+        font-size: 16px;
+    }
+
+    .header-content img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-links {
+        font-size: 24px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
 }
